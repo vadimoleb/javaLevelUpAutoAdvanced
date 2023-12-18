@@ -21,6 +21,7 @@
         <allure-junit5.version>2.25.0</allure-junit5.version>
         <commons-codec.version>1.16.0</commons-codec.version>
         <javafaker.version>1.0.2</javafaker.version>
+        <lombok.version>1.18.30</lombok.version>
     </properties>
 
     <dependencyManagement>
@@ -74,7 +75,14 @@
                 <artifactId>javafaker</artifactId>
                 <version>${javafaker.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
+            </dependency>
         </dependencies>
+
     </dependencyManagement>
     <dependencies>
         <dependency>
@@ -112,6 +120,11 @@
         <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>

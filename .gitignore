@@ -3,3 +3,5 @@
 target
 allure-results
 .allure
+**/.DS_Store
+trello_config_prod.json
